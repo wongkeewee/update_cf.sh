@@ -4,7 +4,7 @@ This bash scripts updates the dynamic public IP of your server to Cloudflare DNS
 
 This script compares the current public IP address against the Cloudflare DNS IP address and update the Cloudflare DNS entry with the current IP address.
 
-### Prerequisites
+## Prerequisites
 
 This script requires the jq JSON Processor package to parse the json output from Cloudflare API
 
@@ -16,25 +16,25 @@ DEBIAN
 $ sudo apt-get install jq
 ```
 
-### Configuring
+## Configuring
 
 Define the parameters at the top of the script.
 
-## Zone ID
+### Zone ID
 
 Define the Zone ID Parameter.
 The value can be found on the Overview Page.
 
-## API Token
+### API Token
 
 Generate an API Token for this script in Cloudflare.
 Grant the edit permission to the DNS Zone for your domain.
 
-## Host
+### Host
 
 Define the Fully Qualified Domain Name of your host in the domain.
 
-## Record ID
+### Record ID
 
 Get the record ID of your host FQDN using the API Token generated above and the Zone ID.
 
